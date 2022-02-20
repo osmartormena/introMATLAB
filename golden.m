@@ -4,6 +4,12 @@ function [phi,iter] = golden(chute)
 %   chute inicial. Também é retornado o número de iterações necessária
 %   iter.
 
+narginchk(1,1)  % checa o número de argumentos de entrada
+nargoutchk(1,2) % checa o número de argumentos de saída
+
+% checa que chute é real, não-negativo e escalar
+validateattributes(chute,{'numeric'},{'nonnegative','scalar'})
+
 phi = chute;        % chute inicial
 tmp = -1;           % variável temporária
 iter = uint8(0);    % contador de iterações (0–255)
