@@ -10,5 +10,5 @@ while abs(phi - tmp) > eps(phi)
     iter = iter + 1;
 end
 
-str = [num2str(iter,'%u'),' iterações: ϕ = ',num2str(phi,'%1.15f')];
+str = [num2str(iter, '%u'), ' iterações: ϕ = ', num2str(phi, '%1.15f')];
 disp(str)

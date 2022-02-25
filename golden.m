@@ -1,14 +1,14 @@
-function [phi,iter] = golden(chute)
+function [phi, iter] = golden(chute)
 %GOLDEN Calcula a razão áurea
-%   [phi,iter] = GOLDEN(chute) calcula a razão áurea phi a partir de um
+%   [phi, iter] = GOLDEN(chute) calcula a razão áurea phi a partir de um
 %   chute inicial. Também é retornado o número de iterações necessária
 %   iter.
 
-narginchk(1,1)  % checa o número de argumentos de entrada
-nargoutchk(1,2) % checa o número de argumentos de saída
+narginchk(1, 1)     % checa o número de argumentos de entrada
+nargoutchk(1, 2)    % checa o número de argumentos de saída
 
 % checa que chute é real, não-negativo e escalar
-validateattributes(chute,{'numeric'},{'nonnegative','scalar'})
+validateattributes(chute, {'numeric'}, {'nonnegative', 'scalar'})
 
 phi = chute;        % chute inicial
 tmp = -1;           % variável temporária

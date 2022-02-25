@@ -8,8 +8,8 @@ assumeAlso(phi >= 0);   % restrição que phi ≥ 0
 
 sol = solve(eqn);       % solução simbólica de phi
 pretty(sol)             % imprime a solução simbólica na tela
-phiAprox = vpa(sol,d);  % solução aproximada de phi
+phiAprox = vpa(sol, d); % solução aproximada de phi
 
-str = ['Para ',num2str(d,'%u'),' dígitos significativos, ϕ = ',...
+str = ['Para ', num2str(d, '%u'), ' dígitos significativos, ϕ = ',...
     char(phiAprox)];
 disp(str)
