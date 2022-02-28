@@ -2,6 +2,7 @@
 #include <float.h>
 #include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
 
@@ -17,6 +18,6 @@ int main() {
 	}
 
 	printf("%u iterações: ϕ = %1.15f\n",iter,phi);
-	return 0;
+	return EXIT_SUCCESS;
 
 }

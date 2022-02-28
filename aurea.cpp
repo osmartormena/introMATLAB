@@ -1,5 +1,6 @@
 // Cálculo da razão áurea (phi)
 #include <cmath>
+#include <cstdlib>
 #include <limits>
 #include <iostream>
 #include <iomanip>
@@ -18,6 +19,6 @@ int main() {
 	}
 
 	std::cout << iter << " iterações: ϕ = " << std::setprecision(16) << phi << std::endl;
-	return 0;
+	return EXIT_SUCCESS;
 
 }
