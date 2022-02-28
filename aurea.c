@@ -25,7 +25,7 @@ void golden(double *phi, unsigned int *iter) {
 		while (fabs(*phi - tmp) > DBL_EPSILON) {
 				tmp = *phi;
 				*phi = sqrt(*phi + 1);
-				*iter++;
+				(*iter)++;
 		} 
 
 }
