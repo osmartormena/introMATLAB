@@ -6,7 +6,7 @@ phi=$1	# chute inicial
 tmp=-1	# variável temporária
 iter=0	# contador de iterações
 
-while (( abs(phi - tmp) > 10**(-15) ))
+while (( abs(phi - tmp) > 10**(-16) ))
 do
 	tmp=$phi
 	((phi=sqrt(phi + 1)))
